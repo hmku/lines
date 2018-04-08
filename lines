@@ -1,0 +1,13 @@
+#!/bin/bash
+# Name: lines
+# Author: Harrison Ku
+# Description: Checks whether any lines in any files in the current directory 
+# exceed 80 characters in length.
+# To have this script run without a pathname, create a new directory called 
+# "bin" in your home directory, and add the following line to your .profile or
+# .bash_profile (usually .bash_profile) file:
+# 	export PATH=$PATH:~/bin
+# You may also have to give the shell permission to execute this script. To do 
+# so, enter the following command into the command line:
+# 	chmod 755 lines
+grep '.\{81\}' *
